@@ -9,77 +9,79 @@
 <body>
     <header>
         <h1>Welcome</h1>
-        <nav>
-            <ul class="nav-grid">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#blog">Blogs</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#blog">Blogs</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <div class="container">
-        <section id="about" class="profile">
-            <h2>Profile</h2>
-            <img src="profile picture.jpeg" alt="Sai Ganesh Takkellapati">
-            <p>MS Computer Science</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </section>
+        <div class="row">
+            <section id="about" class="profile">
+                <h2>Profile</h2>
+                <img src="profile picture.jpeg" alt="Sai Ganesh Takkellapati">
+                <p>MS Computer Science</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </section>
 
-        <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><img src="piechart.png" alt="Skill 1"> Skill 1</li>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <li><img src="piechart.png" alt="Skill 2"> Skill 2</li>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </ul>
-        </section>
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <div class="skill-item">
+                    <img src="piechart.png" alt="Skill 1"> 
+                    <p>Skill 1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="piechart.png" alt="Skill 2">
+                    <p>Skill 2: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </section>
+        </div>
 
-        <section id="education" class="education">
-            <h2>Education</h2>
-            <img src="university.jpeg" alt="University of New Haven" style="width:300px;">
-            <p>University of New Haven</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </section>
+        <div class="row">
+            <section id="education" class="education">
+                <h2>Education</h2>
+                <img src="university.jpeg" alt="University of New Haven" style="width:300px;">
+                <p>University of New Haven</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </section>
 
-        <section id="experience" class="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li><img src="experience.jpeg" alt="Experience 1" style="width: 100px;"> Job 1</li>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <li><img src="experience.jpeg" alt="Experience 2"style="width: 100px;"> Job 2</li>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </ul>
-        </section>
+            <section id="experience" class="experience">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <img src="experience.jpeg" alt="Experience 1" style="width: 100px;">
+                    <p>Job 1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="experience-item">
+                    <img src="experience.jpeg" alt="Experience 2" style="width: 100px;">
+                    <p>Job 2: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </section>
+        </div>
 
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <img src="project.jpeg" alt="Project 1" style="width:100px;">
-            <p>Project 1 
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s 
-            </p>
-            <img src="project.jpeg" alt="Project 2" style="width:100px;">
-            <p>Project 2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-        </section>
+        <div class="row">
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <img src="project.jpeg" alt="Project 1" style="width:100px;">
+                    <p>Project 1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="project-item">
+                    <img src="project.jpeg" alt="Project 2" style="width:100px;">
+                    <p>Project 2: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </section>
 
-        <section id="blog" class="blog">
-            <h2>Blogs</h2>
-            <img src="blog.png" alt="Blog Icon" style="width:50px;">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-               when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-               It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-        </section>
+            <section id="blog" class="blog">
+                <h2>Blogs</h2>
+                <img src="blog.png" alt="Blog Icon" style="width:50px;">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </section>
+        </div>
     </div>
 
     <footer id="contact">
