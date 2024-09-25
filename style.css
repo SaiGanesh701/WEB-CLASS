@@ -1,0 +1,193 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-areas:
+        "profile skills"
+        "education experience"
+        "projects blog";
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.profile {
+    grid-area: profile;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-weight: bold;
+}
+
+
+.skills {
+    grid-area: skills;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.skills ul {
+    list-style-type: none;
+}
+
+.skills ul li {
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skills ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.education {
+    grid-area: education;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.experience {
+    grid-area: experience;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.experience ul {
+    list-style-type: none;
+}
+
+.experience ul li {
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.projects {
+    grid-area: projects;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.projects img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog {
+    grid-area: blog;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.blog img {
+    display: block;
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: lightblue;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "profile"
+            "skills"
+            "education"
+            "experience"
+            "projects"
+            "blog";
+    }
+}
+
+@media (max-width: 500px) {
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+}
